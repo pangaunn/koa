@@ -14,7 +14,7 @@
   "dependencies": {
     "cross-env": "^5.0.0",
     "koa": "{{ koaSemver }}",
-    "nuxt": "~1.0.0-alpha1",
+    "nuxt": "^1.0.0-rc3",
     "source-map-support": "^0.4.15"
   },
   "devDependencies": {
