@@ -16,5 +16,9 @@ if (config.dev) {
   builder.build()
 }
 
-app.use(nuxt.render)
+app.use(async (ctx, next) => {
+  ctx.status = 200
+  await nuxt.render(ctx.req, ctx.res)
+})
+
 app.listen(port, host)
